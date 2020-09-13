@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:context=".FruitDetailActivity">
+
+        <TextView
+            android:id="@+id/textViewErrors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/searchView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/textViewNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_and_veg_name"
+            />
+        <TextView
+            android:id="@+id/textViewName"
+            app:layout_constraintBottom_toTopOf="@+id/textViewBotname"
+            style="@style/FruitDetailText"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+        <TextView
+            android:id="@+id/textViewBotnameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_and_veg_botname"
+            />
+        <TextView
+            android:id="@+id/textViewBotname"
+            style="@style/FruitDetailText"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textViewOthname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+        <TextView
+            android:id="@+id/textViewOthnameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_and_veg_othname"
+            />
+        <TextView
+            android:id="@+id/textViewOthname"
+            style="@style/FruitDetailText"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBotname" />
+        <TextView
+            android:id="@+id/textViewDescriptionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit_and_veg_description"
+            />
+        <TextView
+            android:id="@+id/textViewDescription"
+            style="@style/FruitDetailText"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOthname" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </LinearLayout>
+</ScrollView>

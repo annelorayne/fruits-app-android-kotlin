@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tropical fruits App</string>
+    <string name="fruit_api_url" translatable="false">https://api.tropicalfruitandveg.com/</string>
+    <string name="fruit_and_veg_name">Name:</string>
+    <string name="fruit_and_veg_botname">Botname:</string>
+    <string name="fruit_and_veg_othname">Othname:</string>
+    <string name="fruit_and_veg_description">Description:</string>
+    <string name="network_error_details" translatable="false">Unable to resolve host</string>
+    <string name="network_error">Please, check your network</string>
+    <string name="fruit_not_found_error">Fruit detail not found</string>
+    <string name="fruit_not_found">Fruit not found</string>
+</resources>
